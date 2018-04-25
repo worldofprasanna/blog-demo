@@ -1,19 +1,89 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-title: Crescent
-email: crescent@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-        College symposium
-baseurl: "/blog-demo" # the subpath of your site, e.g. /blog
-url: "http://worldofprasanna.github.io/blog-demo" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+##########################################
+#     Change these variables !important
+##########################################
 
-# Build settings
+# Set this for Copyright in the footer
+owner: Crescent
+
+# Optional quote in the footer
+# To disable set enable to false
+quote:
+  enable: true
+  quote: what is crescent s quote
+  author: Students
+
+# Set this to your main site title
+# In the head - ff page doesnt have its own title,
+# Site title will be used instead
+title: Crescent college of engineering
+
+# Description and title below nav in the header
+punch-line: true
+
+# Your logo for the header
+logo:
+  title: College
+  subtitle:
+
+include:
+  - pages
+
+# Following needed for disqus integration
+# Set your 'disqus' account name
+disqus:
+
+# Uncomment if deployed locally
+# url: https://localhost:4000
+
+# Set your host if deployed not locally
+# For example "https://yourGitHub.github.io"
+url:
+
+# Change this to your base URL starting with forward slash if site is in gh-pages branch
+# For example /branchName
+baseurl:
+
+# Change this to your google analytics ID
+google_analytics: UA-84602255-1
+
+# Contact form pupublic key
+contact_PK: 26a37df6e654df5aa083068e0a6a439c
+
+##########################################
+#          Optional variables
+##########################################
+
+
+# Set maximum posts per page
+paginate: 5
+
+# Set permalink
+permalink: /:categories/:title
+
+# Set excerpt separator
+truncate_size: 40
+
+##########################################
+#          Do not change these variables
+##########################################
+
+sass:
+  sass_dir: _sass
+sass:
+    style: compressed
+
+include:
+  - pages
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap # add /sitemap.xml file
+  - jekyll-gist
+
+paginate_path: /_pages/page:num
+
+highlighter: rouge
 markdown: kramdown
+kramdown:
+  input: GFM

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
+<html lang="en">
+{% include head.html %}
+<body style="background: url('{{ site.baseurl }}/resources/images/main_front.jpg') no-repeat fixed;
+                            background-size: cover">
+<div id="wrapper">
+    <header>
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    </header>
+    <main id="start">
         {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+    </main>
+    {% include paginator.html %}
+    <footer>
+        {% include footer.html %}
+    </footer>
+</div>
+{% if site.disqus %}
+<script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
+{% endif %}
+</body>
 </html>
