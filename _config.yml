@@ -10,7 +10,7 @@ title: Crescent
 email: crescent@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
         College symposium
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog-demo" # the subpath of your site, e.g. /blog
 url: "http://worldofprasanna.github.io/blog-demo" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
